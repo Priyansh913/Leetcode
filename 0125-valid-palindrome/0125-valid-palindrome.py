@@ -5,12 +5,7 @@ class Solution(object):
         :rtype: bool
         """
 
-        s = s.lower().replace(" ", "")
-        
-        for ch in s:
-            if not ch.isalnum():
-                s = s.replace(ch, "")
-
+        s = ''.join(ch.lower() for ch in s if ch.isalnum())
         return s == s[::-1]
         
 s = "A man, a plan, a canal: Panama"
