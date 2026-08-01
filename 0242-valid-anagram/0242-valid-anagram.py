@@ -8,13 +8,7 @@ class Solution(object):
         :rtype: bool
         """
 
-        s_list = dict(Counter(s))
-        t_list = dict(Counter(t))
-
-        s_list = dict(sorted(s_list.items()))
-        t_list = dict(sorted(t_list.items()))
-
-        if s_list == t_list:
+        if Counter(s) == Counter(t):
             return True
         
         else:
