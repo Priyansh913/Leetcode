@@ -8,11 +8,7 @@ class Solution(object):
         :rtype: bool
         """
 
-        if Counter(s) == Counter(t):
-            return True
-        
-        else:
-            return False
+        return Counter(s) == Counter(t)
 
 
 s = "anagram"
