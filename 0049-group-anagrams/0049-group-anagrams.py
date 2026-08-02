@@ -12,7 +12,7 @@ class Solution(object):
         for i in range(len(strs)):
             temp = ''.join(sorted(strs[i]))
 
-            if temp not in list(hashmap.keys()):
+            if temp not in hashmap:
                 hashmap[temp] = [strs[i]]
 
             else:
